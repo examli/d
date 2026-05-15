@@ -26,7 +26,7 @@ CREATE TABLE Customer (
 -- Loan Application Table
 CREATE TABLE Loan_application (
     Lno INTEGER PRIMARY KEY,
-    l_amt_required MONEY CHECK (l_amt_required > 0),
+    l_amt_required MONEY CHECK (l_amt_required > 0::money),
     lamtapproved MONEY,
     l_date DATE
 );
